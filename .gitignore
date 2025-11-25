@@ -1,0 +1,159 @@
+# ============================================
+# SAGE Google ADK Project - .gitignore
+# ============================================
+
+# ===== CRITICAL: API Keys & Secrets =====
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+gcp-key.json
+secrets/
+credentials/
+
+# ===== Python =====
+# Virtual Environments
+venv/
+env/
+ENV/
+sage/
+backend/venv/
+backend/sage/
+*.venv
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# ===== Node.js / React =====
+# Dependencies
+node_modules/
+frontend/sage-ui/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production builds
+frontend/sage-ui/build/
+/build
+
+# Testing
+/coverage
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===== Logs =====
+*.log
+logs/
+*.log.*
+
+# ===== Database =====
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== OS Files =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===== IDEs =====
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ===== Temporary Files =====
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ===== CSV Data (if sensitive) =====
+# Uncomment if your CSV contains sensitive data
+# *.csv
+# backend/sample_data.csv
+
+# ===== Test Files =====
+test_*.py
+*_test.py
+test_output/
+
+# ===== Documentation =====
+# Uncomment if you don't want to track docs
+# docs/_build/
+
+# ===== Package Manager =====
+package-lock.json
+yarn.lock
+
+# ===== ADK Specific =====
+sample-agent/
+.adk/
+
+# ===== Backup Files =====
+*.bak
+*.backup
+*~
+
+# ===== Environment-specific =====
+*.local
+
+# ===== Large Files =====
+*.zip
+*.tar.gz
+*.rar
